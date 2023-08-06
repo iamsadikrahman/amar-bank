@@ -33,7 +33,7 @@ function getNewWithdraw(){
   <main>
 
     <section class="mt-8">
-      <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+      <div class="grid grid-cols-1 gap-4 w-3/4 mx-auto text-white sm:grid-cols-3 text-center">
         <div class="bg-yellow-400 p-8 rounded-lg">
           <h4 class="text-3xl">Deposit</h4>
           <h2 id="deposit-total"  class="text-5xl font-medium">$<span  >{{data.depositedAmount}}</span></h2>
@@ -50,7 +50,7 @@ function getNewWithdraw(){
     </section>
 
     <section class="mt-8 w-3/4 mx-auto">
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div class="bg-violet-400 p-8 rounded-lg">
           <h3 class="text-4xl text-white mb-4">Your Deposit</h3>
           <input v-model="data.newDeposit" id="deposit-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount  you want to deposit">
