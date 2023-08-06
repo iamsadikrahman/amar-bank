@@ -34,31 +34,31 @@ function getNewWithdraw(){
 
     <section class="mt-8">
       <div class="grid grid-cols-1 gap-4 w-3/4 mx-auto text-white sm:grid-cols-3 text-center">
-        <div class="bg-yellow-400 p-8 rounded-lg">
+        <div class="bg-yellow-400  rounded-lg p-3 sm:p-8">
           <h4 class="text-3xl">Deposit</h4>
-          <h2 id="deposit-total"  class="text-5xl font-medium">$<span  >{{data.depositedAmount}}</span></h2>
+          <h2 id="deposit-total"  class="text-3xl sm:text-5xl font-medium">$<span  >{{data.depositedAmount}}</span></h2>
         </div>
-        <div class="bg-red-400 p-8 rounded-lg">
+        <div class="bg-red-400 p-3 sm:p-8 rounded-lg">
           <h4 class="text-3xl">Withdraw</h4>
-          <h2 class="text-5xl font-medium">$<span id="withdraw-total">{{ data.withdrawAmount }}</span></h2>
+          <h2 class="text-3xl sm:text-5xl font-medium">$<span id="withdraw-total">{{ data.withdrawAmount }}</span></h2>
         </div>
-        <div class="bg-blue-400 p-8 rounded-lg">
+        <div class="bg-blue-400 p-3 sm:p-8 rounded-lg">
           <h4 class="text-3xl">Balance</h4>
-          <h2 class="text-5xl font-medium">$<span id="balance-total">{{data.balanceAmount}}</span></h2>
+          <h2 class="text-3xl sm:text-5xl font-medium">$<span id="balance-total">{{data.balanceAmount}}</span></h2>
         </div>
       </div>
     </section>
 
     <section class="mt-8 w-3/4 mx-auto">
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <div class="bg-violet-400 p-8 rounded-lg">
-          <h3 class="text-4xl text-white mb-4">Your Deposit</h3>
-          <input v-model="data.newDeposit" id="deposit-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount  you want to deposit">
+        <div class="bg-violet-400 p-4 sm:p-8 rounded-lg">
+          <h3 class="text-3xl sm:text-4xl text-white mb-4">Your Deposit</h3>
+          <input v-model="data.newDeposit" id="deposit-field" class="w-11/12 sm:w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount  you want to deposit">
           <button @click="addNewDeposit()"  id="btn-deposit" class="bg-blue-800 px-6 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600">Deposit</button>
         </div>
-        <div class="bg-amber-400 p-8 rounded-lg">
-          <h3 class="text-4xl text-white mb-4">Your Withdraw</h3>
-          <input v-model="data.newWithdraw"  id="withdraw-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount  you want to withdraw">
+        <div class="bg-amber-400 p-4 sm:p-8 rounded-lg">
+          <h3 class="text-3xl sm:text-4xl text-white mb-4">Your Withdraw</h3>
+          <input v-model="data.newWithdraw"  id="withdraw-field" class="w-11/12 sm:w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount  you want to withdraw">
           <button @click="getNewWithdraw()" id="btn-withdraw" class="bg-blue-800 px-6 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600">Withdraw</button>
         </div>
       </div>
