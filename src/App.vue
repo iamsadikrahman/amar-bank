@@ -28,7 +28,7 @@ function getNewWithdraw(){
 
 <template>
   <header>
-    <h1 class="text-5xl text-center mt-4">Unlimited <span class="text-red-500 font-medium">Baap-Er-Bank</span>!!!</h1>
+    <h1 class="text-5xl text-center mt-4">Amar <span class="text-red-500 font-medium">Bank</span>!!!</h1>
   </header>
   <main>
 
